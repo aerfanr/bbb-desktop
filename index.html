@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title> BigBlueButton Desktop </title>
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body dir="rtl">
+        <div class="side-container" >
+            <div class="meetings-list" id="meetings-list">
+            </div>
+            <form class="add-meeting-form" id="add-form">
+                <h2> ذخیره جلسه </h2>
+                <div>
+                    نام: <input class="text-input"/>
+                </div>
+                <div>
+                    کد: <input class="text-input"/> -bbb
+                </div>
+                <input class="submit" type="submit" value="دخیره" />
+            </form>
+        </div>
+        <div class="main-container" >
+            <h1> به BigBlueButton خوش آمدید </h1>
+            <form id="main-form">
+                <legend> لطفاً کد جلسه را وارد کنید. </legend>
+                <div dir="ltr">
+                    bbb- <input type="text" name="bbb-code" class="text-input" placeholder="abc-def"/>
+                </div>
+                <input class="submit" type="submit" value="ورود به جلسه" />
+            </form>
+        </div>
+        <script type="text/javascript" src="renderer.js"> </script>
+    </body>
+</html>
