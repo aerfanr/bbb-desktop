@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "A cross-platform desktop client for BigBlueButton based on Chromium",
   "main": "main.js",
+  "repository": "https://github.com/aerfanr/bbb-desktop.git",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
