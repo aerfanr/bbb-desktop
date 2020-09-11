@@ -27,6 +27,9 @@
   },
   "build": {
     "appId": "ir.lozaa.bigbluebutton-desktop",
-    "publish": ["github"]
+    "publish": ["github"],
+    "linux": {
+        "target": ["AppImage"]
+    }
   }
 }
