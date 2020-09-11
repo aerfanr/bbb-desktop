@@ -1,4 +1,5 @@
 const { app, BrowserWindow, ipcMain, Menu } = require('electron')
+const { autoUpdater } = require('electron-updater')
 const fs = require('fs')
 const path = require('path')
 
@@ -32,6 +33,8 @@ const createMainWindow = () => {
         }
         e.reply('meetings-list', JSON.parse(data))
     })
+
+    autoUpdater.checkForUpdatesAndNotify()
 }
 
 const createMeetingWindow = (url) => {
